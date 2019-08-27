@@ -35,7 +35,7 @@ class Encounters:
             player.name = self.scribe.listen()
             display.draw_status(player)
             display.refresh_display()
-            self.scribe.write("Pleased to meet you " + player.name + ". I tend to chatter on rather quickly. Press any key to let me know you're ready to keep listening!")
+            self.scribe.write("Pleased to meet you " + player.name + ". I tend to chatter on pretty quickly. Press any key to let me know you're ready to keep listening!")
             self.scribe.write("What's that? You're lost, eh?")
             self.scribe.write("Well, if you need a way out... there's rumoured to be a hidden Portal somewhere in these lands.")
             self.scribe.write("To find the lost Portal would be a dangerous adventure indeed! You'll need to learn how to protect yourself.")

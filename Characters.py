@@ -8,12 +8,14 @@ import math
 
 class BaseCharacter:
 
-    def __init__(self, health, weapon, strength):
-        self.health = health
+    def __init__(self, weapon, attack, defense):
+        self.health = 100
         self.equipped_weapon = weapon
-        self.rations = Ration(2000)
-        self.bandages = Bandage(0)
-        self.strength = strength
+        # self.rations = Ration(2000)
+        # self.bandages = Bandage(0)
+        self.inventory = [10]; #ten seperate items, each item has variable quantity
+        self.self.attack = attack
+        self.defense = defense
 
     def attack(self):
         return self.equipped_weapon.damage
